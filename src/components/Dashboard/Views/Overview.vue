@@ -386,6 +386,11 @@
         })
       }, 1024)
     },
+    watch () {
+      count () {
+        this.pieChart.data.series[0] = this.count
+      }
+    },
     // Fetches posts when the component is created.
     created () {
       let that = this
